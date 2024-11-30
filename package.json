@@ -1,0 +1,44 @@
+{
+  "name": "@r-a-tech-innovators/release",
+  "description": "Node.js and docker github actions compatible semantic-release shareable config to publish to npmjs.com and ghcr.io",
+  "version": "1.0.1",
+  "license": "MIT",
+  "files": [
+    "release.config.js"
+  ],
+  "main": "release.config.js",
+  "author": "Ogbonna Sunday <sunday@ogbonna.dev>",
+  "engines": {
+    "node": ">=21",
+    "npm": ">=10"
+  },
+  "bugs": "https://github.com/R-A-Tech-Innovators/release/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/R-A-Tech-Innovators/release.git"
+  },
+  "peerDependencies": {
+    "semantic-release": ">=23.0.2"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.6",
+    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "conventional-changelog-conventionalcommits": "^7.0.2",
+    "eclass-docker-fork": "^1.3.1",
+    "npmlog": "^7.0.1",
+    "semantic-release": ">=23.0.2",
+    "semantic-release-major-tag": "^0.3.2",
+    "semantic-release-replace-plugin": "^1.2.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
